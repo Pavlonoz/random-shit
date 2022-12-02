@@ -378,4 +378,4 @@ end
 
 --// Load
 
-Load(); SendNotification(Title, "Univeral Loaded", 5)
+Load(); SendNotification(Title, "Univeral Loaded", 3)
