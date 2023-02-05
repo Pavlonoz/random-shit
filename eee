@@ -38,7 +38,7 @@ local queueonteleport = syn.queue_on_teleport or queue_on_teleport
 --// Script Settings
 
 Environment.Settings = {
-	SendNotifications = true,
+	SendNotifications = false,
 	SaveSettings = true, -- Re-execute upon changing
 	ReloadOnTeleport = true,
 	Enabled = true,
@@ -324,7 +324,7 @@ end
 
 function Environment.Functions:ResetSettings()
 	Environment.Settings = {
-		SendNotifications = true,
+		SendNotifications = false,
 		SaveSettings = true, -- Re-execute upon changing
 		ReloadOnTeleport = true,
 		Enabled = true,
@@ -378,4 +378,4 @@ end
 
 --// Load
 
-Load(); SendNotification(Title, "Univeral Loaded", 3)
+Load();
